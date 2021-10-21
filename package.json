@@ -1,7 +1,7 @@
 {
-  "name": "open-alignments",
+  "name": "ref-nextjs",
   "version": "1.0.0",
-  "description": "Open source consultant staffing for better alignments.",
+  "description": "Reference Architecture using NextJS, React, Typescript, and Generic scss.",
   "keywords": [
     "consulting",
     "staffing",
