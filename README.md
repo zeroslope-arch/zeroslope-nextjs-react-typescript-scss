@@ -1,6 +1,9 @@
 # ref-nextjs-react-typescript-scss
 Reference Architecture using NextJS, React, Typescript, and Generic scss
 
+## What is this?
+This is a reference architecture (or accelerator) used to kick off a standard structure when putting react applications into production.
+
 ## Technologies
 - React 17.0
 - NextJS 11.1
