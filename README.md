@@ -5,6 +5,7 @@ Reference Architecture using NextJS, React, Typescript, and Generic scss
 - React 17.0
 - NextJS 11.1
 - ExpressJs 14.17
+- Typescript 4.4
 - Scss 1.32
 
 ## Solution Structure
