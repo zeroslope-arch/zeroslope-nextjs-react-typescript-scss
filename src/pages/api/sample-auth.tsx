@@ -1,16 +1,18 @@
 import { NextApiHandler, NextApiRequest, NextApiResponse } from 'next';
+import getConfig from 'next/config';
 
 const handler: NextApiHandler = async (
   _: NextApiRequest,
   res: NextApiResponse
 ) => {
   try {
+    const { publicRuntimeConfig } = getConfig();
     const result = await fetch(
-      `${process.env.API_BASE_URL}/endpoint`,
+      `${publicRuntimeConfig.API_BASE_URL}/endpoint`,
       {
         method: 'POST',
         headers: {
-          'X-Subscription-Key': process.env.API_SECRET_KEY,
+          'X-Subscription-Key': publicRuntimeConfig.API_SECRET_KEY,
         },
       }
     );

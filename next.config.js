@@ -5,7 +5,18 @@ const withBundleAnalyzer = require('@next/bundle-analyzer')({
   enabled: process.env.ENABLE_ANALYZER === 'true',
 });
 
+const {
+  PORT,
+  API_APIM_KEY,
+  API_BASE_URL
+} = process.env;
+
 let nextConfigurationOptions = {
+  publicRuntimeConfig: {
+    PORT,
+    API_APIM_KEY,
+    API_BASE_URL,
+  },
   useFileSystemPublicRoutes: isProd ? false : true,
   assetPrefix: isProd ? "" : "",
   inlineImageLimit: 6384,
