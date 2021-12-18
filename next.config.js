@@ -7,14 +7,14 @@ const withBundleAnalyzer = require('@next/bundle-analyzer')({
 
 const {
   PORT,
-  API_APIM_KEY,
+  API_SECRET_KEY,
   API_BASE_URL
 } = process.env;
 
 let nextConfigurationOptions = {
   publicRuntimeConfig: {
     PORT,
-    API_APIM_KEY,
+    API_SECRET_KEY,
     API_BASE_URL,
   },
   useFileSystemPublicRoutes: isProd ? false : true,
